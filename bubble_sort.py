@@ -39,5 +39,7 @@ def bubble_sort(quantity):
     print("Result of {0} values sorting: \n {1}".format(len(unsorted_sequence), " ".join(map(str, unsorted_sequence))))
     print('Sequence was sorted for {0} seconds'.format(time_delta))
 
+
 if __name__ == '__main__':
-    bubble_sort()
+    quantity = int(input())
+    bubble_sort(quantity)

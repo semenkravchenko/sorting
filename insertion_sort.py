@@ -37,3 +37,7 @@ def insertion_sort(quantity):
 
     print("Result of {0} values sorting: \n {1}".format(len(sorted_sequence), " ".join(map(str, sorted_sequence))))
     print('Sequence was sorted for {0} seconds'.format(time_delta))
+
+if __name__ == '__main__':
+    quantity = int(input())
+    insertion_sort(quantity)

@@ -51,4 +51,5 @@ def comb_sort(quantity):
     print('Sequence was sorted for {0} seconds'.format(time_delta))
 
 if __name__ == '__main__':
-    comb_sort()
+    quantity = int(input())
+    comb_sort(quantity)

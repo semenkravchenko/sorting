@@ -13,22 +13,22 @@ def set_sorting_type():
         4. Selection sorting
         5. Stupid sorting""")
 
-        sorting_type_choise = int(input())
+        sorting_type_choice = int(input())
 
-        if sorting_type_choise == 1:
+        if sorting_type_choice == 1:
             return bubble_sort
-        elif sorting_type_choise == 2:
+        elif sorting_type_choice == 2:
             return comb_sort
-        elif sorting_type_choise == 3:
+        elif sorting_type_choice == 3:
             return insertion_sort
-        elif sorting_type_choise == 4:
+        elif sorting_type_choice == 4:
             return selection_sort
-        elif sorting_type_choise == 5:
+        elif sorting_type_choice == 5:
             return stupid_sort
         else:
             raise IndexError()
     except IndexError:
-        print("Wrong choise...")
+        print("Wrong choice...")
 
 def set_numbers_quantity():
 
@@ -36,12 +36,12 @@ def set_numbers_quantity():
 
         print("""How many numbers will be sorted. Please, enter the number:""")
 
-        numbers_quantity_choise = int(input())
+        numbers_quantity_choice = int(input())
 
-        if numbers_quantity_choise <= 0:
+        if numbers_quantity_choice <= 0:
             raise IOError
 
-        return numbers_quantity_choise
+        return numbers_quantity_choice
 
     except IOError as error:
         print("Numbers quantity must be > 0")

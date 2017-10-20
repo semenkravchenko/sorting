@@ -44,3 +44,6 @@ def stupid_sort(quantity):
     print("Result of {0} values sorting: \n {1}".format(len(unsorted_sequence), " ".join(map(str, unsorted_sequence))))
     print('Sequence was sorted for {0} iterations. It took {1} seconds'.format(iteration_count, time_delta))
 
+if __name__ == '__main__':
+    quantity = int(input())
+    stupid_sort(quantity)
