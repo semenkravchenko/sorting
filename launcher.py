@@ -3,6 +3,7 @@ from comb_sort import comb_sort
 from insertion_sort import insertion_sort
 from selection_sort import selection_sort
 from stupid_sort import stupid_sort
+from python_sort import python_sort
 
 def set_sorting_type():
     try:
@@ -11,7 +12,8 @@ def set_sorting_type():
         2. Comb sorting
         3. Insertion sorting
         4. Selection sorting
-        5. Stupid sorting""")
+        5. Stupid sorting
+        6. Python own sorting""")
 
         sorting_type_choice = int(input())
 
@@ -25,6 +27,8 @@ def set_sorting_type():
             return selection_sort
         elif sorting_type_choice == 5:
             return stupid_sort
+        elif sorting_type_choice == 6:
+            return python_sort
         else:
             raise IndexError()
     except IndexError:
