@@ -1,13 +1,13 @@
 from datetime import datetime
 import random
 
-def comb_sort(quantity):
+def comb_sort(quantity, range_start, range_end):
     # unsorted_sequence = input('Enter the sequence of numbers and press \"Enter\": \n')
     # unsorted_sequence = list(map(int, unsorted_sequence.split(" ")))
 
     # unsorted_sequence = list(map(int, "15 12 25 62 11 15 8 22 64 3".split(" ")))
 
-    unsorted_sequence = [random.randint(1, 100) for i in range(quantity)]
+    unsorted_sequence = [random.randint(range_start, range_end) for i in range(quantity)]
 
     time_start = datetime.now().timestamp()
 

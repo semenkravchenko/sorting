@@ -6,8 +6,8 @@ import random
 
 # unsorted_sequence = list(map(int, "15 12 25 62 11 15 8 22 64 3".split(" ")))
 
-def insertion_sort(quantity):
-    unsorted_sequence = [random.randint(1, 100) for i in range(quantity)]
+def insertion_sort(quantity, range_start, range_end):
+    unsorted_sequence = [random.randint(range_start, range_end) for i in range(quantity)]
 
     time_start = datetime.now().timestamp()
 

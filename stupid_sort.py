@@ -6,9 +6,9 @@ import random
 
 # unsorted_sequence = list(map(int, "15 11 15 25 12 22 64 3".split(" ")))
 
-def stupid_sort(quantity):
+def stupid_sort(quantity, range_start, range_end):
 
-    unsorted_sequence = [random.randint(1, 100) for i in range(quantity)]
+    unsorted_sequence = [random.randint(range_start, range_end) for i in range(quantity)]
 
     time_start = datetime.now().timestamp()
 
